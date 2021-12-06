@@ -1,0 +1,11 @@
+//variabler
+$background-color: #140F46; 
+$accent-color: #D68C45; 
+
+//mixin
+@mixin paragraph {
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+}
+
+@import "./about"
