@@ -1,0 +1,72 @@
+.about header {
+  color: red;
+}
+
+header {
+  border: black solid 1px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-image: url("https://images.unsplash.com/photo-1551818255-e6e10975bc17?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1073&q=80");
+  height: 130px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .title {
+  border: solid 5px #D68C45;
+  height: 70px;
+  width: 200px;
+  margin-left: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .title h1 {
+  color: #D68C45;
+  font-family: 'Gabriela', serif;
+}
+
+ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+ul .yellowbutton {
+  background: #D68C45;
+  color: #140F46;
+}
+
+li {
+  border: solid #D68C45 1px;
+  font-size: 20px;
+  list-style-type: none;
+  margin: 30px;
+  padding: 10px 20px;
+  font-family: 'Quicksand', sans-serif;
+}
+
+li a {
+  text-decoration: none;
+  color: #D68C45;
+}
+/*# sourceMappingURL=style.css.map */
