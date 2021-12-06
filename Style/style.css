@@ -69,4 +69,35 @@ li a {
   text-decoration: none;
   color: #D68C45;
 }
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 130px;
+  background: #7d8aa1;
+  background: linear-gradient(177deg, #7d8aa1 0%, #0f193b 100%);
+  color: white;
+}
+
+footer .adress {
+  width: 15%;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 12pt;
+  padding: 20px;
+}
+
+footer .socialmedia {
+  width: 20%;
+}
+
+footer .socialmedia i {
+  padding-left: 20px;
+}
 /*# sourceMappingURL=style.css.map */
