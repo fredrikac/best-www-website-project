@@ -1,0 +1,8 @@
+//variabler
+$backgroundColor: #140F46; 
+$accentColor: #D68C45; 
+
+//mixin
+@mixin paragraph {
+    font-family: 'Quicksand', sans-serif;
+}
