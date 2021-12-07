@@ -1,5 +1,29 @@
+//variabler
+$backgroundColor: #140F46; 
+$accentColor: #D68C45; 
+
 .about {
     header {
         color:red;
     }
 }
+
+.img-container {
+display: flex;
+flex-direction: row;
+justify-content:center; 
+flex-wrap: wrap;
+
+}
+
+
+
+
+.imgbox {
+    padding: 0 0 30px 30px;
+  }
+  
+  .imgbox .img {
+    display: inline-block;
+    box-shadow: 110px -0px $accentColor;
+  }

@@ -2,6 +2,31 @@
   color: red;
 }
 
+.img-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.imgbox {
+  padding: 0 0 30px 30px;
+}
+
+.imgbox .img {
+  display: inline-block;
+  -webkit-box-shadow: 110px 0px #D68C45;
+          box-shadow: 110px 0px #D68C45;
+}
+
 @media (max-width: 600px) {
   body {
     background: #140F46;
