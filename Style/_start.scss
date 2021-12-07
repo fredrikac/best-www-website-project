@@ -1,0 +1,46 @@
+@media screen and (min-width: 600px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 0px;
+    margin: 0px;
+  }
+  p {
+    @include paragraph;
+    color: white;
+    .big {
+      font-size: 40px;
+    }
+    .medium {
+      font-size: 25px;
+      margin-top: 30px;
+    }
+  }
+  .background {
+    background-image: url("https://images.unsplash.com/photo-1551818255-e6e10975bc17?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1073&q=80");
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+  .startTextOver {
+    width: 45%;
+    margin: 50px;
+  }
+  .startTextUnder {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    .one {
+      font-size: 17px;
+      padding: 30px;
+    }
+    .two {
+      font-size: 25px;
+      padding: 20px;
+    }
+    .para {
+      width: 50%;
+      height: 200px;
+    }
+  }
+}
