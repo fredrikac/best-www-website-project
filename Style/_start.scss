@@ -1,10 +1,11 @@
 @media screen and (min-width: 600px) {
+  body {
+    background-color: $backgroundColor;
+  }
   main {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    padding: 0px;
-    margin: 0px;
   }
   p {
     @include paragraph;
@@ -14,7 +15,7 @@
     }
     .medium {
       font-size: 25px;
-      margin-top: 30px;
+      margin-top: 10px;
     }
   }
   .background {
@@ -25,22 +26,82 @@
   .startTextOver {
     width: 45%;
     margin: 50px;
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
   }
   .startTextUnder {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    background-color: $backgroundColor;
+    width: 100%;
     .one {
       font-size: 17px;
-      padding: 30px;
+      padding: 20px;
     }
     .two {
       font-size: 25px;
       padding: 20px;
     }
     .para {
-      width: 50%;
-      height: 200px;
+      width: 30%;
+      min-height: 200px;
     }
+  }
+}
+@media (max-width: 600px) {
+  body {
+    background-color: $backgroundColor;
+  }
+  main {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  p {
+    @include paragraph;
+    color: white;
+    text-align: center;
+    .big {
+      font-size: 30px;
+      margin-bottom: 50px;
+    }
+    .medium {
+      font-size: 17px;
+      text-align: left;
+    }
+  }
+  .startTextOver {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: 50px;
+  }
+  .startTextUnder {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: $backgroundColor;
+    .one {
+      font-size: 17px;
+    }
+    .two {
+      font-size: 20px;
+    }
+    .para {
+      width: 80%;
+    }
+  }
+  .telefonimg {
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin-top: 20px;
+    width: 90%;
+    height: 200px;
+    background-image: url("https://images.unsplash.com/photo-1551818255-e6e10975bc17?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1073&q=80");
   }
 }
