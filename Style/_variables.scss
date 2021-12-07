@@ -2,7 +2,26 @@
 $backgroundColor: #140F46; 
 $accentColor: #D68C45; 
 
-//mixin
+//mixins
 @mixin paragraph {
     font-family: 'Quicksand', sans-serif;
+}
+
+@mixin h1-styling {
+    h1{
+        color:$accentColor;
+        font-family: 'Gabriela', serif;
+    }
+}
+
+@mixin footer-styling {
+    @include paragraph;
+    color: white;
+    width: 100%;
+    background: rgb(125,138,161);
+    background: linear-gradient(177deg, rgba(125,138,161,1) 0%, rgba(15,25,59,1) 100%);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
