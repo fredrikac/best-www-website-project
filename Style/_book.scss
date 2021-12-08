@@ -1,0 +1,41 @@
+
+@media (max-width: 600px){
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+
+
+        .basic-info {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .date-guests {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .free-text{
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}
+
+
+
+
+@media (min-width: 600px){
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 2vw;
+}
+
+.basic-info {
+    display: flex;
+    flex-direction: column;
+}}

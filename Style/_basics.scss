@@ -1,0 +1,157 @@
+//Mobile first - här skriver vi styling för när skärmen är mindre än 600px
+@media (max-width: 600px){
+    body {
+        background: $backgroundColor;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: -10px;//tar bort marginalen ut mot skärmens kanter
+    }
+
+    nav {
+        visibility: hidden;//döljer knapparna när fönstret blir mindre
+    }
+
+    header {
+        border: solid $accentColor 2px;
+        display: flex; 
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        height: 30%;
+        width: 100%;
+
+        .title {
+            @include h1-styling;
+            position: absolute;
+            width: 70%;
+            height: 30%;
+            padding: 3vw 6vw 3vw 20vw;
+            margin-bottom: 50px;
+        
+            h1 {
+                font-size: 8vw;
+            }
+        }
+
+        .hamburgermenu {
+            color: $accentColor;
+            width: 30%;
+            height: 30%;
+            
+            .fa {
+                position: absolute;
+                right: 6vw;
+                top: 6vw;
+            }
+        }
+    }
+
+
+    footer {
+        @include footer-styling;
+
+        .adress {
+            width: 25%;
+            font-size: 2vw;
+            padding: 2vw 8vw 2vw 8vw;
+        }
+
+        .socialmedia {
+            width: 35%;
+            padding-right: 4vw;
+
+            .fa {
+                padding: 1vw;
+            }
+        }
+    }
+}
+
+
+//Här är all grundstyling för större skärmar
+@media screen and (min-width: 600px) {
+body {
+    margin: -10px;//tar bort marginalen ut mot skärmens kanter
+}
+
+header{
+    border: solid $accentColor 2px;
+    object-fit: cover;
+    background-image: url("https://images.unsplash.com/photo-1551818255-e6e10975bc17?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1073&q=80");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 130px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    .title{
+        @include h1-styling;
+        border: solid 5px $accentColor;
+        height: 70px;
+        width: 200px;
+        margin-left: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hamburgermenu {
+     visibility: hidden;//så att hamburgaren inte syns i helskärmsläge
+    }
+}
+nav{
+    margin: 0px;
+}
+ul{
+    display: flex;
+    flex-direction: row;
+    margin: 0px;
+    .yellowbutton{
+        background: $accentColor;
+        color: $backgroundColor;
+    }
+}
+li{
+    border: solid $accentColor 2px;
+    font-size: 20px;
+    list-style-type:none;
+    margin: 30px;
+    padding: 10px 20px;
+    @include paragraph;
+
+    a{
+        text-decoration: none;
+        color: $accentColor;
+    }
+}
+
+footer {
+    @include footer-styling;
+    height: 130px;
+    
+    //adresstexten
+    .adress {
+        width: 15%;
+        font-size: 12pt;
+        padding: 20px;
+
+    }
+
+    //Social-media-ikonerna
+    .socialmedia {
+        width: 20%;
+        i {
+            padding-left: 20px;
+        }
+
+        
+        //fixa så att ikonerna blir lite större
+    
+
+    }
+}}
