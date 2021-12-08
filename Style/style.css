@@ -376,7 +376,7 @@
   }
 }
 
-p {
+p, label {
   font-family: 'Quicksand', sans-serif;
   color: white;
 }
@@ -397,7 +397,23 @@ p {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  main .basic-info {
+  main section {
+    margin: 10vw;
+    width: 90%;
+  }
+  main section span {
+    text-align: center;
+  }
+  main section span h2 {
+    font-family: 'Quicksand', sans-serif;
+    color: white;
+    font-size: 200%;
+    font-weight: lighter;
+  }
+  main section label {
+    margin: 1.5vw 0vw;
+  }
+  main section .basic-info {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -406,7 +422,12 @@ p {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  main .date-guests {
+  main section .basic-info input {
+    width: 80%;
+    height: 4vw;
+    border-radius: 1vw;
+  }
+  main section .date-guests {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -414,8 +435,26 @@ p {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: 3vw 0vw;
   }
-  main .free-text {
+  main section .date-guests input {
+    height: 4vw;
+    border-radius: 1vw;
+    margin: 0vw 1.5vw;
+  }
+  main section .date-guests #date {
+    width: 50%;
+  }
+  main section .date-guests #guests {
+    width: 20%;
+  }
+  main section .free-text {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -424,9 +463,39 @@ p {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  main section .free-text input {
+    height: 30vw;
+    width: 80%;
+    border-radius: 3vw;
+  }
+  main section .info-text {
+    width: 80%;
+  }
+  main section .info-text .call-us {
+    font-size: 120%;
+    font-weight: 400;
+  }
+  main section .image-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 80%;
+  }
+  main section .image-container img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    max-width: 70%;
+    height: auto;
+  }
 }
 
-@media (min-width: 600px) {
+@media (max-width: 600px) and (min-width: 600px) {
   main {
     display: -webkit-box;
     display: -ms-flexbox;
