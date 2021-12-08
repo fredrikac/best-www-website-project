@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .about header {
   color: red;
 }
@@ -451,5 +452,23 @@
         -ms-flex-direction: column;
             flex-direction: column;
   }
+}
+
+.rubrikOmdöme {
+  color: #D68C45;
+  font-size: 120%;
+}
+
+h5 {
+  color: #D68C45;
+  font-size: 14px;
+}
+
+img {
+  max-width: 30%;
+}
+
+p {
+  font-size: 14px;
 }
 /*# sourceMappingURL=style.css.map */
