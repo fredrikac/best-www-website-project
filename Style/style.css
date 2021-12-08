@@ -376,6 +376,11 @@
   }
 }
 
+p {
+  font-family: 'Quicksand', sans-serif;
+  color: white;
+}
+
 @media (max-width: 600px) {
   main {
     display: -webkit-box;
