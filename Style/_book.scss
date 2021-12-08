@@ -1,5 +1,5 @@
 
-p {
+p, label {
 
     @include paragraph;
     color: white;
@@ -7,29 +7,117 @@ p {
 
 
 @media (max-width: 600px){
+    
     main {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
         justify-content: center;
 
+        //det jag vill göra: 
+        //få alla sections lika stora
+        //centrera innehållet i dem utan att flytta texten
+        
+        //justera: något med marginalerna i huvudstylingen gör att det blir lite off...
 
+        section {
+            margin: 10vw;
+            width: 90%;
+
+            span {
+    
+                text-align: center;
+            h2 {
+                @include paragraph;
+                color: white;
+                font-size: 200%;
+                font-weight: lighter;
+            }
+        }
+       
+       //alla labels ska ha en marginal
+        label {
+            margin: 1.5vw 0vw;
+        }
+
+        //första delen av formuläret
         .basic-info {
             display: flex;
             flex-direction: column;
+            
+            input {
+                width: 80%;
+                height: 4vw;
+                border-radius: 1vw;
+            }
         }
 
+        //datum&antal-delen
         .date-guests {
             display: flex;
             flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            margin: 3vw 0vw;
+            
+
+            input {
+                height: 4vw;
+                border-radius: 1vw;
+                margin: 0vw 1.5vw;
+            }
+
+            #date {
+                width: 50%;
+            }
+
+            //den här vill jag ska ligga mot högra marginalen
+            #guests {
+                width: 20%;
+    
+            }
+
         }
 
-        .free-text{
+            //beskriv dina önskemål-delen
+            .free-text{
+                display: flex;
+                flex-direction: column;
+
+                input {
+                    height: 30vw;
+                    width: 80%;
+                    border-radius: 3vw;
+                 }       
+            }
+            //informationstext-delen
+            .info-text {
+                width: 80%;
+                .call-us {
+                font-size: 120%;
+                font-weight: 400;
+                }
+            }   
+
+        //bilden
+        .image-container {
             display: flex;
-            flex-direction: column;
-        }
+            justify-content: center;
+            align-items: center;
+            width: 80%;
+        
+            img {
+                object-fit: cover;
+                max-width: 70%;
+                height: auto;
+            }
+        }    
+
+
     }
+    
 }
+
 
 
 
@@ -46,3 +134,4 @@ main {
     display: flex;
     flex-direction: column;
 }}
+}
