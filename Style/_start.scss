@@ -2,13 +2,6 @@
   body {
     background-color: $backgroundColor;
   }
-  main {
-    // display: flex;
-    // flex-direction: column;
-    // flex-wrap: wrap;
-    // max-height: 100%;
-
-  }
   p {
     @include paragraph;
     color: white;
@@ -68,11 +61,11 @@
     color: white;
     text-align: center;
     .big {
-      font-size: 30px;
+      font-size: 40px;
       margin-bottom: 50px;
     }
     .medium {
-      font-size: 17px;
+      font-size: 25px;
       text-align: left;
     }
   }
@@ -89,12 +82,12 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    background-color: $backgroundColor;
+    background: linear-gradient(0deg, rgba(57, 65, 97, 0.68) 0%, rgba(34,27,105,1) 55%);
     .one {
       font-size: 17px;
     }
     .two {
-      font-size: 20px;
+      font-size: 25px;
     }
     .para {
       width: 80%;

@@ -151,6 +151,7 @@
             align-items: center;
   }
   header .title {
+    border: solid 5px #D68C45;
     height: 70px;
     width: 200px;
     margin-left: 20px;
@@ -318,11 +319,11 @@
     text-align: center;
   }
   p .big {
-    font-size: 30px;
+    font-size: 40px;
     margin-bottom: 50px;
   }
   p .medium {
-    font-size: 17px;
+    font-size: 25px;
     text-align: left;
   }
   .startTextOver {
@@ -355,13 +356,14 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    background-color: #140F46;
+    background: -webkit-gradient(linear, left bottom, left top, from(rgba(57, 65, 97, 0.68)), color-stop(55%, #221b69));
+    background: linear-gradient(0deg, rgba(57, 65, 97, 0.68) 0%, #221b69 55%);
   }
   .startTextUnder .one {
     font-size: 17px;
   }
   .startTextUnder .two {
-    font-size: 20px;
+    font-size: 25px;
   }
   .startTextUnder .para {
     width: 80%;
