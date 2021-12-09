@@ -6,10 +6,10 @@
     @include paragraph;
     color: white;
     .big {
-      font-size: 250%;
+      font-size: 40px;
     }
     .medium {
-      font-size: 150%;
+      font-size: 25px;
       margin-top: 10px;
     }
   }
@@ -21,7 +21,7 @@
   }
   .startTextOver {
     width: 45%; 
-    margin: 50px;
+    margin: 100px;
     display: flex;
     flex-direction: column;
   }
@@ -29,7 +29,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    background-color: $backgroundColor;
+    background: linear-gradient(0deg, rgba(22,36,86,0.68) 0%, rgba(20,15,70,1) 55%);
     width: 100%;
     min-height: 300px;
 
@@ -40,10 +40,11 @@
     .two {
       font-size: 25px;
       padding: 20px;
+      
     }
     .para {
       width: 30%;
-      min-height: 200px;
+      margin-top: 40px;
     }
   }
 }
@@ -61,11 +62,11 @@
     color: white;
     text-align: center;
     .big {
-      font-size: 40px;
-      margin-bottom: 50px;
+      font-size: 30px;
+      margin-bottom: 20;
     }
     .medium {
-      font-size: 25px;
+      font-size: 17px;
       text-align: left;
     }
   }
@@ -82,12 +83,12 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    background: linear-gradient(0deg, rgba(57, 65, 97, 0.68) 0%, rgba(34,27,105,1) 55%);
+    background-color: $backgroundColor;
     .one {
       font-size: 17px;
     }
     .two {
-      font-size: 25px;
+      font-size: 20;
     }
     .para {
       width: 80%;
