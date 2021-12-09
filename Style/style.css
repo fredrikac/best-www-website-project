@@ -398,25 +398,49 @@ p, label {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    width: 100%;
+    margin: 5vw 10vw 10vw 10vw;
   }
-  main h3 {
-    visibility: hidden;
+  main h2.desktop {
+    display: none;
   }
-  main section {
-    margin: 10vw;
-    width: 90%;
-  }
-  main section h2 {
+  main h2.mobile {
     font-family: 'Quicksand', sans-serif;
     color: white;
     font-size: 200%;
     font-weight: lighter;
     text-align: center;
   }
-  main label {
-    margin: 1.5vw 0vw;
+  main section {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
-  main .basic-info {
+  main label {
+    margin-bottom: 1vw;
+  }
+  main button {
+    width: 80%;
+    height: 5vw;
+    font-family: 'Quicksand', sans-serif;
+    color: white;
+    background: #D68C45;
+    border-radius: 1vw;
+    margin-top: 2.5vw;
+    border-style: none;
+  }
+  main .form-container .full-basic-info {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -425,12 +449,26 @@ p, label {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  main .basic-info input {
+  main .form-container .full-basic-info .attach-label-to-input {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 3vw;
+  }
+  main .form-container .full-basic-info input {
     width: 80%;
     height: 4vw;
     border-radius: 1vw;
+    border-style: none;
   }
-  main .date-guests {
+  main .form-container .date-guests {
+    margin-bottom: 3vw;
+  }
+  main .form-container .date-guests .input-wrap {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -444,20 +482,14 @@ p, label {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    margin: 3vw 0vw;
   }
-  main .date-guests input {
+  main .form-container .date-guests .input-wrap input {
+    width: 60%;
     height: 4vw;
     border-radius: 1vw;
-    margin: 0vw 1.5vw;
+    border-style: none;
   }
-  main .date-guests #date {
-    width: 50%;
-  }
-  main .date-guests #guests {
-    width: 20%;
-  }
-  main .free-text {
+  main .form-container .free-text {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -466,17 +498,21 @@ p, label {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  main .free-text input {
+  main .form-container .free-text input {
     height: 30vw;
     width: 80%;
     border-radius: 3vw;
+    border-style: none;
   }
   main .info-text {
-    width: 80%;
+    width: 100%;
+    margin-top: 8vw;
   }
   main .info-text .call-us {
     font-size: 120%;
     font-weight: 400;
+    text-align: center;
+    width: 60%;
   }
   main .image-container {
     display: -webkit-box;
@@ -488,17 +524,18 @@ p, label {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    width: 80%;
+    width: 100%;
+    margin-top: 10vw;
   }
   main .image-container img {
     -o-object-fit: cover;
        object-fit: cover;
-    max-width: 70%;
+    max-width: 60%;
     height: auto;
   }
 }
 
-@media (min-width: 600px) {
+@media (min-width: 601px) {
   main {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -512,10 +549,10 @@ p, label {
             justify-content: space-between;
     margin: 2vw;
   }
-  main h2 {
-    visibility: hidden;
+  main h2.mobile {
+    display: none;
   }
-  main h3 {
+  main h2.desktop {
     font-family: 'Quicksand', sans-serif;
     color: white;
     font-size: 90%;
@@ -528,6 +565,15 @@ p, label {
     margin: 0.5vw 0vw;
     font-size: 80%;
   }
+  .form-container button {
+    width: 80%;
+    font-family: 'Quicksand', sans-serif;
+    color: white;
+    background: #D68C45;
+    border-radius: 0.5vw;
+    margin: 0.5vw;
+    border-style: none;
+  }
   .form-container .full-basic-info {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -538,6 +584,7 @@ p, label {
             flex-direction: row;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    width: 100%;
   }
   .form-container .full-basic-info .attach-label-to-input {
     display: -webkit-box;
@@ -549,10 +596,27 @@ p, label {
             flex-direction: column;
     margin-right: 1vw;
   }
+  .form-container .full-basic-info .input-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 100%;
+  }
   .form-container .full-basic-info input {
-    width: 50%;
+    width: 90%;
     height: 2vw;
     border-radius: 0.5vw;
+    border-style: none;
+  }
+  .form-container .date-guests .input-wrap {
+    width: 100%;
+  }
+  .form-container .date-guests .input-wrap input {
+    width: 100%;
   }
   .form-container .free-text {
     display: -webkit-box;
@@ -568,6 +632,7 @@ p, label {
     height: 10vw;
     width: 80%;
     border-radius: 1vw;
+    border-style: none;
   }
   .info-text {
     width: 40%;
