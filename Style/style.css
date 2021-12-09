@@ -399,23 +399,24 @@ p, label {
         -ms-flex-pack: center;
             justify-content: center;
   }
+  main h3 {
+    visibility: hidden;
+  }
   main section {
     margin: 10vw;
     width: 90%;
   }
-  main section span {
-    text-align: center;
-  }
-  main section span h2 {
+  main section h2 {
     font-family: 'Quicksand', sans-serif;
     color: white;
     font-size: 200%;
     font-weight: lighter;
+    text-align: center;
   }
-  main section label {
+  main label {
     margin: 1.5vw 0vw;
   }
-  main section .basic-info {
+  main .basic-info {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -424,12 +425,12 @@ p, label {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  main section .basic-info input {
+  main .basic-info input {
     width: 80%;
     height: 4vw;
     border-radius: 1vw;
   }
-  main section .date-guests {
+  main .date-guests {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -445,18 +446,18 @@ p, label {
             justify-content: space-between;
     margin: 3vw 0vw;
   }
-  main section .date-guests input {
+  main .date-guests input {
     height: 4vw;
     border-radius: 1vw;
     margin: 0vw 1.5vw;
   }
-  main section .date-guests #date {
+  main .date-guests #date {
     width: 50%;
   }
-  main section .date-guests #guests {
+  main .date-guests #guests {
     width: 20%;
   }
-  main section .free-text {
+  main .free-text {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -465,19 +466,19 @@ p, label {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  main section .free-text input {
+  main .free-text input {
     height: 30vw;
     width: 80%;
     border-radius: 3vw;
   }
-  main section .info-text {
+  main .info-text {
     width: 80%;
   }
-  main section .info-text .call-us {
+  main .info-text .call-us {
     font-size: 120%;
     font-weight: 400;
   }
-  main section .image-container {
+  main .image-container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -489,7 +490,7 @@ p, label {
             align-items: center;
     width: 80%;
   }
-  main section .image-container img {
+  main .image-container img {
     -o-object-fit: cover;
        object-fit: cover;
     max-width: 70%;
@@ -497,7 +498,7 @@ p, label {
   }
 }
 
-@media (max-width: 600px) and (min-width: 600px) {
+@media (min-width: 600px) {
   main {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -511,7 +512,34 @@ p, label {
             justify-content: space-between;
     margin: 2vw;
   }
-  .basic-info {
+  main h2 {
+    visibility: hidden;
+  }
+  main h3 {
+    font-family: 'Quicksand', sans-serif;
+    color: white;
+    font-size: 90%;
+    font-weight: lighter;
+  }
+  .form-container {
+    width: 35%;
+  }
+  .form-container label {
+    margin: 0.5vw 0vw;
+    font-size: 80%;
+  }
+  .form-container .full-basic-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .form-container .full-basic-info .attach-label-to-input {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -519,6 +547,44 @@ p, label {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    margin-right: 1vw;
+  }
+  .form-container .full-basic-info input {
+    width: 50%;
+    height: 2vw;
+    border-radius: 0.5vw;
+  }
+  .form-container .free-text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 1vw 0vw;
+  }
+  .form-container .free-text input {
+    height: 10vw;
+    width: 80%;
+    border-radius: 1vw;
+  }
+  .info-text {
+    width: 40%;
+    padding: 0vw 4vw 0vw 3vw;
+  }
+  .info-text .call-us {
+    font-size: larger;
+  }
+  .image-container {
+    width: 25%;
+    padding: 3vw 0vw;
+  }
+  .image-container img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    max-width: 80%;
+    height: auto;
   }
 }
 

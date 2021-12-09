@@ -26,29 +26,37 @@
          </nav>
      </header>
      <main>
-         <section>
-            <span>
-            <h2>Boka</h2></span>
+         <section class="form-container">
+            <h2>Boka</h2>
+            <h3>Välkommen med din bokningsförfrågan! Vi svarar normalt inom 48 timmar. </h3>
              <form>
-                 <div class="basic-info">
+                <div class="full-basic-info">
+                 <div class="basic-info"> 
+                     <div class="attach-label-to-input">
              <label for="full-name">För- och efternamn</label>
-             <input type="text" id="full-name">
+             <input type="text" id="full-name"></div>
+                <div class="attach-label-to-input">
              <label for="company-name">Företag</label>
-             <input type="text" id="company-name">
+             <input type="text" id="company-name"></div>
+                <div class="attach-label-to-input">
              <label for="phone-number">Telefonnummer</label>
-             <input type="number" id="phone-number">
+             <input type="number" id="phone-number"></div>
+                <div class="attach-label-to-input">
              <label for="email">Mailadress</label>
-             <input type="text" id="email"></div>
+             <input type="text" id="email"></div></div>
            
            <div class="date-guests">
-                <label for="date">Datum
-                <input type="date" id="date"></label>
-                <label for="guests">Antal
-                <input type="number" id="guests"></div></label>
+                <div class="attach-label-to-input">
+                <label for="date">Datum</label>
+                <input type="date" id="date"></div>
+                    <div class="attach-label-to-input">
+                <label for="guests">Antal</label>
+                <input type="number" id="guests"></div></div></div>
          
            <div class="free-text">
                 <label for="specifications">Beskriv dina önskemål</label>
                 <input type="text" id="specifications">
+                <button>Skicka</button>
             </form></div>
 
          </section>

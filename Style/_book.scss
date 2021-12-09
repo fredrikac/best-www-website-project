@@ -14,6 +14,10 @@ p, label {
         align-items: flex-start;
         justify-content: center;
 
+        h3 {
+            visibility: hidden;
+        }
+
         //det jag vill göra: 
         //få alla sections lika stora
         //centrera innehållet i dem utan att flytta texten
@@ -24,14 +28,13 @@ p, label {
             margin: 10vw;
             width: 90%;
 
-            span {
-    
-                text-align: center;
+           
             h2 {
-                @include paragraph;
+                @include paragraph;//mixin
                 color: white;
                 font-size: 200%;
                 font-weight: lighter;
+                text-align: center;
             }
         }
        
@@ -44,7 +47,7 @@ p, label {
         .basic-info {
             display: flex;
             flex-direction: column;
-            
+
             input {
                 width: 80%;
                 height: 4vw;
@@ -60,7 +63,6 @@ p, label {
             justify-content: space-between;
             margin: 3vw 0vw;
             
-
             input {
                 height: 4vw;
                 border-radius: 1vw;
@@ -74,7 +76,6 @@ p, label {
             //den här vill jag ska ligga mot högra marginalen
             #guests {
                 width: 20%;
-    
             }
 
         }
@@ -107,7 +108,7 @@ p, label {
             width: 80%;
         
             img {
-                object-fit: cover;
+                object-fit: cover;//mixin
                 max-width: 70%;
                 height: auto;
             }
@@ -119,19 +120,109 @@ p, label {
 }
 
 
+//TORSDAG: styla knappen på mobile & desktop
+//Fixa placeringen av inputfälten (både mobil & desk)
 
+//FREDAG: fixa variabler & marginalen på hela alltet
 
-
+//Desktop
 @media (min-width: 600px){
-main {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin: 2vw;
-}
 
-.basic-info {
-    display: flex;
-    flex-direction: column;
-}}
+    main {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 2vw;
+
+        h2 {
+           visibility: hidden;
+        }
+
+        h3 {
+            @include paragraph;//gör en mixin av dessa
+            color: white;
+            font-size: 90%;
+            font-weight: lighter;
+        }
+    }
+
+
+
+    //styling för vänster section
+    .form-container {
+        width: 35%;
+        label {
+            margin: 0.5vw 0vw;
+            font-size: 80%;
+        }
+        
+        //första delen av formuläret inkl datum och antal
+        .full-basic-info {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;//få till placeringen på inputrutorna så de speglar mockupen
+        
+           
+
+            //Wrappar label+input i en div för att kunna fästa texten ovanpå inputfältet
+            .attach-label-to-input {
+                display: flex;
+                flex-direction: column;
+                margin-right: 1vw;
+            }
+
+            input {
+                width: 50%;
+                height: 2vw;//ev variabel
+                border-radius: 0.5vw;//ev variabel
+            }
+        
+        }
+
+     
+
+        //beskriv dina önskemål-delen
+        .free-text{
+            display: flex;
+            flex-direction: column;
+            margin: 1vw 0vw;
+
+            input {
+                height: 10vw;
+                width: 80%;
+                border-radius: 1vw;
+             }       
+        }
+
+    }
+
+    //mittensection
+    .info-text {
+        width: 40%;
+        padding: 0vw 4vw 0vw 3vw;
+
+
+        .call-us {
+            font-size: larger;
+        }
+    }
+
+    //högersection
+    .image-container {
+        width: 25%;
+        padding: 3vw 0vw;
+
+        img {
+            object-fit: cover;//mixin
+            max-width: 80%;
+            height: auto;
+        }
+
+    }
+
+
+
+
+
+
 }
