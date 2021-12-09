@@ -91,7 +91,7 @@ header{
 
     .title{
         @include h1-styling;
-        // border: solid 5px $accentColor;
+        border: solid 5px $accentColor;
         height: 70px;
         width: 200px;
         margin-left: 20px;
