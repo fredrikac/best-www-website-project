@@ -13,120 +13,139 @@ p, label {
         flex-direction: column;
         align-items: flex-start;
         justify-content: center;
+        width: 100%;
+        margin: 5vw 10vw 10vw 10vw;
 
-        h3 {
-            visibility: hidden;
+        h2.desktop {
+            display: none;
         }
 
-        //det jag vill göra: 
-        //få alla sections lika stora
-        //centrera innehållet i dem utan att flytta texten
-        
-        //justera: något med marginalerna i huvudstylingen gör att det blir lite off...
+        //styling för h2
+        h2.mobile {
+            @include paragraph;//mixin
+            color: white;
+            font-size: 200%;
+            font-weight: lighter;
+            text-align: center;
+        }
 
+        //generell styling för alla 3 sections
         section {
-            margin: 10vw;
-            width: 90%;
-
-           
-            h2 {
-                @include paragraph;//mixin
-                color: white;
-                font-size: 200%;
-                font-weight: lighter;
-                text-align: center;
-            }
-        }
-       
-       //alla labels ska ha en marginal
-        label {
-            margin: 1.5vw 0vw;
-        }
-
-        //första delen av formuläret
-        .basic-info {
+            width: 100%;
             display: flex;
             flex-direction: column;
-
-            input {
-                width: 80%;
-                height: 4vw;
-                border-radius: 1vw;
-            }
-        }
-
-        //datum&antal-delen
-        .date-guests {
-            display: flex;
-            flex-direction: row;
             align-items: center;
-            justify-content: space-between;
-            margin: 3vw 0vw;
-            
-            input {
-                height: 4vw;
-                border-radius: 1vw;
-                margin: 0vw 1.5vw;
-            }
-
-            #date {
-                width: 50%;
-            }
-
-            //den här vill jag ska ligga mot högra marginalen
-            #guests {
-                width: 20%;
-            }
-
+            justify-content: center;
         }
+
+        label {
+            margin-bottom: 1vw;
+        }
+
+        button {
+            width: 80%;
+            height: 5vw;
+            @include paragraph;
+            color: white;
+            background: $accentColor;
+            border-radius: 1vw;
+            margin-top: 2.5vw;
+            border-style: none;//variabel
+        }
+
+        //Första sectionen
+        .form-container {
+
+            //Hela formuläret
+            .full-basic-info {
+                display: flex;
+                flex-direction: column;
+        
+                .attach-label-to-input{
+                    display: flex;
+                    flex-direction: column;
+                    margin-top: 3vw;
+                }
+                input {
+                    width: 80%;
+                    height: 4vw;
+                    border-radius: 1vw;
+                    border-style: none;
+                    
+                }    
+            }
+
+            .date-guests {
+            //för att lägga datum+antal bredvid varandra
+                .input-wrap {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    input {
+                        width: 60%;//det här blir inte exakt, justera sen
+                        height: 4vw;
+                        border-radius: 1vw;
+                        border-style: none;
+                    }
+                }
+                margin-bottom: 3vw;//skapa lite luft mellan
+            }
 
             //beskriv dina önskemål-delen
             .free-text{
                 display: flex;
                 flex-direction: column;
-
+        
                 input {
                     height: 30vw;
                     width: 80%;
                     border-radius: 3vw;
-                 }       
+                    border-style: none;
+                }       
             }
-            //informationstext-delen
-            .info-text {
-                width: 80%;
-                .call-us {
+
+        }
+
+        //Mittensection
+        .info-text {
+            width: 100%;
+            margin-top: 8vw;
+            .call-us {
                 font-size: 120%;
                 font-weight: 400;
-                }
-            }   
+                text-align: center;
+                width: 60%;
+            }
+        }   
 
-        //bilden
+        //Bildsection
         .image-container {
             display: flex;
             justify-content: center;
             align-items: center;
-            width: 80%;
+            width: 100%;
+            margin-top: 10vw;
         
             img {
                 object-fit: cover;//mixin
-                max-width: 70%;
+                max-width: 60%;
                 height: auto;
             }
         }    
-
 
     }
     
 }
 
 
-//TORSDAG: styla knappen på mobile & desktop
-//Fixa placeringen av inputfälten (både mobil & desk)
-
-//FREDAG: fixa variabler & marginalen på hela alltet
+//FREDAG: Centrera inputfälten i bokningsformuläret
+//justera formuläret i desktopvyn så det hänger ihop snygg när skärmstorleken justeras
+//fixa variabler & marginalen på hela alltet
 
 //Desktop
-@media (min-width: 600px){
+@media (min-width: 601px){
 
     main {
         display: flex;
@@ -134,19 +153,17 @@ p, label {
         justify-content: space-between;
         margin: 2vw;
 
-        h2 {
-           visibility: hidden;
+        h2.mobile {
+           display: none;
         }
 
-        h3 {
+        h2.desktop {
             @include paragraph;//gör en mixin av dessa
             color: white;
             font-size: 90%;
             font-weight: lighter;
         }
     }
-
-
 
     //styling för vänster section
     .form-container {
@@ -155,13 +172,22 @@ p, label {
             margin: 0.5vw 0vw;
             font-size: 80%;
         }
-        
+
+        button {
+            width: 80%;
+            @include paragraph;
+            color: white;
+            background: $accentColor;
+            border-radius: 0.5vw;
+            margin: 0.5vw;
+            border-style: none;//variabel
+        }
         //första delen av formuläret inkl datum och antal
         .full-basic-info {
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;//få till placeringen på inputrutorna så de speglar mockupen
-        
+            width: 100%;
            
 
             //Wrappar label+input i en div för att kunna fästa texten ovanpå inputfältet
@@ -171,26 +197,44 @@ p, label {
                 margin-right: 1vw;
             }
 
+            //för att lägga input-rutorna + text på rad i rätt ordning
+            .input-wrap {
+                display: flex;
+                flex-direction: row;
+                width: 100%;//behövs denna?
+            }
+
             input {
-                width: 50%;
+                width: 90%;
                 height: 2vw;//ev variabel
                 border-radius: 0.5vw;//ev variabel
+                border-style: none;
             }
         
         }
 
-     
+        .date-guests {
+            .input-wrap {
+                width: 100%;
+    
+                input {
+                    width: 100%;
+                }
 
+            }
+        }
         //beskriv dina önskemål-delen
         .free-text{
             display: flex;
             flex-direction: column;
             margin: 1vw 0vw;
+            
 
             input {
                 height: 10vw;
                 width: 80%;
                 border-radius: 1vw;
+                border-style: none;
              }       
         }
 
@@ -219,10 +263,5 @@ p, label {
         }
 
     }
-
-
-
-
-
 
 }
