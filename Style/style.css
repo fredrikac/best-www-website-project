@@ -398,7 +398,6 @@ p, label {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    width: 100%;
     margin: 5vw 0vw;
   }
   main h2.desktop {
@@ -411,21 +410,8 @@ p, label {
     font-weight: lighter;
     text-align: center;
   }
-  main section {
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+  main .form-container {
+    width: 60%;
   }
   main .form-container label {
     margin-bottom: 1vw;
@@ -451,6 +437,7 @@ p, label {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    width: 100%;
   }
   main .form-container .basic-info .input-wrap {
     display: -webkit-box;
@@ -460,6 +447,7 @@ p, label {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    width: 100%;
   }
   main .form-container .basic-info input {
     width: 100%;
@@ -476,6 +464,7 @@ p, label {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    width: 100%;
   }
   main .form-container .date-guests .wrap3 {
     display: -webkit-box;
@@ -485,22 +474,23 @@ p, label {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    width: 100%;
   }
   main .form-container .date-guests .wrap3 #date {
     height: 5vw;
-    width: 15vw;
+    width: 30vw;
     border-radius: 1vw;
     border-style: none;
   }
   main .form-container .date-guests .wrap3 #guests {
     height: 5vw;
-    width: 10vw;
+    width: 15vw;
     border-radius: 1vw;
     border-style: none;
   }
@@ -527,9 +517,10 @@ p, label {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    width: 100%;
   }
   main .form-container .free-text .wrap4 input {
     height: 30vw;
@@ -538,7 +529,7 @@ p, label {
     border-style: none;
   }
   main .form-container .free-text button {
-    width: 50%;
+    width: 100%;
     height: 6vw;
     font-family: 'Quicksand', sans-serif;
     color: white;
@@ -550,6 +541,16 @@ p, label {
   main .info-text {
     width: 100%;
     margin-top: 8vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   main .info-text .call-us {
     font-size: 120%;
