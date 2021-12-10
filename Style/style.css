@@ -392,14 +392,14 @@ p, label {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
     width: 100%;
-    margin: 5vw 10vw 10vw 10vw;
+    margin: 5vw 0vw;
   }
   main h2.desktop {
     display: none;
@@ -427,29 +427,10 @@ p, label {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  main label {
+  main .form-container label {
     margin-bottom: 1vw;
   }
-  main button {
-    width: 80%;
-    height: 5vw;
-    font-family: 'Quicksand', sans-serif;
-    color: white;
-    background: #D68C45;
-    border-radius: 1vw;
-    margin-top: 2.5vw;
-    border-style: none;
-  }
-  main .form-container .full-basic-info {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  main .form-container .full-basic-info .attach-label-to-input {
+  main .form-container .attach-label-to-input {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -459,16 +440,35 @@ p, label {
             flex-direction: column;
     margin-top: 3vw;
   }
-  main .form-container .full-basic-info input {
-    width: 80%;
+  main .form-container .basic-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  main .form-container .basic-info .input-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main .form-container .basic-info input {
+    width: 100%;
     height: 4vw;
     border-radius: 1vw;
     border-style: none;
   }
   main .form-container .date-guests {
     margin-bottom: 3vw;
-  }
-  main .form-container .date-guests .input-wrap {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -476,16 +476,31 @@ p, label {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+  }
+  main .form-container .date-guests .wrap3 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
   }
-  main .form-container .date-guests .input-wrap input {
-    width: 60%;
-    height: 4vw;
+  main .form-container .date-guests .wrap3 #date {
+    height: 5vw;
+    width: 15vw;
+    border-radius: 1vw;
+    border-style: none;
+  }
+  main .form-container .date-guests .wrap3 #guests {
+    height: 5vw;
+    width: 10vw;
     border-radius: 1vw;
     border-style: none;
   }
@@ -497,11 +512,39 @@ p, label {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
-  main .form-container .free-text input {
+  main .form-container .free-text .wrap4 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  main .form-container .free-text .wrap4 input {
     height: 30vw;
-    width: 80%;
+    width: 100%;
     border-radius: 3vw;
+    border-style: none;
+  }
+  main .form-container .free-text button {
+    width: 50%;
+    height: 6vw;
+    font-family: 'Quicksand', sans-serif;
+    color: white;
+    background: #D68C45;
+    border-radius: 1vw;
+    margin-top: 2.5vw;
     border-style: none;
   }
   main .info-text {
