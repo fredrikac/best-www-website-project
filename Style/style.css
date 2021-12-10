@@ -238,67 +238,6 @@
   }
 }
 
-@media screen and (min-width: 600px) {
-  body {
-    background-color: #140F46;
-  }
-  p {
-    font-family: 'Quicksand', sans-serif;
-    color: white;
-  }
-  p .big {
-    font-size: 40px;
-  }
-  p .medium {
-    font-size: 25px;
-    margin-top: 10px;
-  }
-  .background {
-    background-image: url("https://images.unsplash.com/photo-1551818255-e6e10975bc17?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1073&q=80");
-    background-repeat: no-repeat;
-    background-size: 100%;
-    min-height: 700px;
-  }
-  .startTextOver {
-    width: 45%;
-    margin: 100px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .startTextUnder {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    background: -webkit-gradient(linear, left bottom, left top, from(rgba(22, 36, 86, 0.68)), color-stop(55%, #140f46));
-    background: linear-gradient(0deg, rgba(22, 36, 86, 0.68) 0%, #140f46 55%);
-    width: 100%;
-    min-height: 300px;
-  }
-  .startTextUnder .one {
-    font-size: 17px;
-    padding: 20px;
-  }
-  .startTextUnder .two {
-    font-size: 25px;
-    padding: 20px;
-  }
-  .startTextUnder .para {
-    width: 30%;
-    margin-top: 40px;
-  }
-}
-
 @media (max-width: 600px) {
   body {
     background-color: #140F46;
@@ -375,6 +314,67 @@
     width: 90%;
     height: 200px;
     background-image: url("https://images.unsplash.com/photo-1551818255-e6e10975bc17?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1073&q=80");
+  }
+}
+
+@media screen and (min-width: 600px) {
+  body {
+    background-color: #140F46;
+  }
+  p {
+    font-family: 'Quicksand', sans-serif;
+    color: white;
+  }
+  p .big {
+    font-size: 40px;
+  }
+  p .medium {
+    font-size: 25px;
+    margin-top: 10px;
+  }
+  .background {
+    background-image: url("https://images.unsplash.com/photo-1551818255-e6e10975bc17?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1073&q=80");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    min-height: 700px;
+  }
+  .startTextOver {
+    width: 45%;
+    margin: 100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .startTextUnder {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    background: -webkit-gradient(linear, left bottom, left top, from(rgba(22, 36, 86, 0.68)), color-stop(55%, #140f46));
+    background: linear-gradient(0deg, rgba(22, 36, 86, 0.68) 0%, #140f46 55%);
+    width: 100%;
+    min-height: 300px;
+  }
+  .startTextUnder .one {
+    font-size: 17px;
+    padding: 20px;
+  }
+  .startTextUnder .two {
+    font-size: 25px;
+    padding: 20px;
+  }
+  .startTextUnder .para {
+    width: 30%;
+    margin-top: 40px;
   }
 }
 
