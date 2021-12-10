@@ -558,6 +558,9 @@ p, label {
     text-align: center;
     width: 60%;
   }
+  main .info-text p {
+    width: 80%;
+  }
   main .image-container {
     display: -webkit-box;
     display: -ms-flexbox;
