@@ -13,7 +13,7 @@ h5 {
     font-size: 14px;
 }
 
-img {
+.images {
     max-width: 350px;
 }
 
@@ -22,6 +22,7 @@ p {
 }
 
 #event {
+    margin-right: 50px;
     width: 350px;
     height: 400px;
     position: relative;
@@ -29,6 +30,7 @@ p {
 }
 
 #wedding {
+    margin-left: 50px;
     width: 350px;
     height: 400px;
     position: relative;
@@ -50,4 +52,12 @@ p {
     position: relative;
     display: flex;
     flex-direction: column;
+}
+
+main {
+    margin-left: 160px;
+    width: 75%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
 }

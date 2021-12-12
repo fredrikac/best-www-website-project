@@ -665,7 +665,7 @@ h5 {
   font-size: 14px;
 }
 
-img {
+.images {
   max-width: 350px;
 }
 
@@ -674,6 +674,7 @@ p {
 }
 
 #event {
+  margin-right: 50px;
   width: 350px;
   height: 400px;
   position: relative;
@@ -681,6 +682,7 @@ p {
 }
 
 #wedding {
+  margin-left: 50px;
   width: 350px;
   height: 400px;
   position: relative;
@@ -717,5 +719,19 @@ p {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+main {
+  margin-left: 160px;
+  width: 75%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 /*# sourceMappingURL=style.css.map */
