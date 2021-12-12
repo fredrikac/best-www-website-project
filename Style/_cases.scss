@@ -1,7 +1,11 @@
+$backgroundColor: #140F46; 
+$accentColor: #D68C45;
 
 .rubrikOmdöme {
+    text-align: center;
     color: $accentColor;
-    font-size: 120%;
+    font-size: 110%;
+    font-family: 'Gabriela', serif;
 }
 
 h5 {
@@ -10,9 +14,40 @@ h5 {
 }
 
 img {
-    max-width: 30%;
+    max-width: 350px;
 }
 
 p {
     font-size: 14px;
+}
+
+#event {
+    width: 350px;
+    height: 400px;
+    position: relative;
+    display: inline-block;
+}
+
+#wedding {
+    width: 350px;
+    height: 400px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+#birthday {
+    width: 350px;
+    height: 400px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+#hotelroom {
+    width: 350px;
+    height: 400px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
 }

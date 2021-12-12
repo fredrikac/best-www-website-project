@@ -654,8 +654,10 @@ p, label {
 }
 
 .rubrikOmdöme {
+  text-align: center;
   color: #D68C45;
-  font-size: 120%;
+  font-size: 110%;
+  font-family: 'Gabriela', serif;
 }
 
 h5 {
@@ -664,10 +666,56 @@ h5 {
 }
 
 img {
-  max-width: 30%;
+  max-width: 350px;
 }
 
 p {
   font-size: 14px;
+}
+
+#event {
+  width: 350px;
+  height: 400px;
+  position: relative;
+  display: inline-block;
+}
+
+#wedding {
+  width: 350px;
+  height: 400px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#birthday {
+  width: 350px;
+  height: 400px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#hotelroom {
+  width: 350px;
+  height: 400px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 /*# sourceMappingURL=style.css.map */
