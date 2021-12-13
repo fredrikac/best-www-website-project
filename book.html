@@ -28,57 +28,65 @@
      <main>
          <section class="form-container">
             <h2 class="mobile">Boka</h2>
-            <h2 class="desktop">Välkommen med din bokningsförfrågan! Vi svarar normalt inom 48 timmar. </h2>
+            <h2 class="desktop">Välkommen med din bokningsförfrågan! <br>Vi svarar normalt inom 48 timmar. </h2>
+
              <form id="form-1">
-                <div class="full-basic-info">
-                 <div class="basic-info"> 
-                    <div class="input-wrap">
+                
+                <div class="full-basic-info"><!--för att desktop ska ha samma format på alla fält från namn till antal-->
+                 <div class="basic-info"> <!--för att mobile ska ha datum och antal i row på en rad-->
+
+                    <div class="input-wrap wrap1">
                      <div class="attach-label-to-input">
-                <label for="full-name">För- och efternamn</label>
-                <input type="text" id="full-name">
-                    </div>
+                        <label for="full-name">För- och efternamn</label>
+                            <input type="text" id="full-name">
+                                </div><!--här slutar attach label to input-->
 
                     <div class="attach-label-to-input">
-                <label for="company-name">Företag</label>
-                <input type="text" id="company-name">
-                    </div></div>
+                        <label for="company-name">Företag</label>
+                            <input type="text" id="company-name">
+                                </div><!--här slutar attach label to input-->
+                                    </div><!--här slutar input wrap-->
 
-                <div class="input-wrap">
-                    <div class="attach-label-to-input">
-                <label for="phone-number">Telefonnummer</label>
-                <input type="number" id="phone-number">
-                    </div>
+
+                    <div class="input-wrap wrap2">
+                     <div class="attach-label-to-input">
+                        <label for="phone-number">Telefonnummer</label>
+                        <input type="number" id="phone-number">
+                            </div><!--här slutar attach label to input-->
 
                     <div class="attach-label-to-input">
-                <label for="email">Mailadress</label>
-                <input type="text" id="email">
-                    </div></div></div>
+                        <label for="email">Mailadress</label>
+                        <input type="text" id="email">
+                            </div> <!--här slutar attach label to input-->
+                                </div><!--här slutar input wrap-->
+                                    </div> <!--Här slutar diven basic info-->
            
-            <div class="date-guests">
-                <div class="input-wrap">
-                    <div class="attach-label-to-input">
-                <label for="date">Datum</label>
-                <input type="date" id="date">
-                    </div>
+                <div class="date-guests">
+                    <div class="input-wrap wrap3">
+                        <div class="attach-label-to-input">
+                            <label for="date">Datum</label>
+                            <input type="date" id="date">
+                                </div><!--här slutar attach label to input-->
 
-                    <div class="attach-label-to-input">
-                <label for="guests">Antal</label>
-                <input type="number" id="guests"> 
-                    </div>
-                        </div>
-                            </div>
-                                </div>
+                        <div class="attach-label-to-input">
+                            <label for="guests">Antal</label>
+                            <input type="number" id="guests"> 
+                                </div><!--här slutar attach label to input-->
+                                    </div><!--här slutar input-wrap-->
+                                        </div><!--här slutar date-guests-->
+                                            </div><!--här slutar full basic-info-->
          
             <div class="free-text">
-                <label for="specifications">Beskriv dina önskemål</label>
-                <input type="text" id="specifications">
-            </form>
+                <div class="input-wrap wrap4">
+                    <label for="specifications">Beskriv dina önskemål</label>
+                    <input type="text" id="specifications">
+                        </div><!--här slutar input-wrap-->
+                    </form>
             <button type="submit" form="form-1">Skicka</button>
-        
-        </div>
+                </div><!--här slutar free-text-->
+            
 
          </section>
-         
          <section class="info-text">
             <p class="call-us">
                 Du kan också ringa oss för en personlig konsultation. <br>
@@ -87,7 +95,8 @@
             <p>
                 För frågor kring fakturor, vänligen kontakta ekonomiavdelningen.<br>
                 Tel: 08 11 11 11<br>
-                ekonomi@coolference.se
+                Mail: <a href="mailto:ekonomi@coolference.se">ekonomi@coolference.se</a>
+                
             </p>
          </section>
          <section class="image-container">
