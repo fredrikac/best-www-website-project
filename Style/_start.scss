@@ -1,12 +1,10 @@
 //mob
 @media (max-width: 600px) {
-  body {
+  .body {
     background-color: $backgroundColor;
   }
-  main {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+  .main {
+    margin: auto;
   }
   p {
     @include paragraph;
@@ -24,10 +22,9 @@
   .startTextOver {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around ;
     align-items: center;
-    width: 80%;
-    margin: 50px;
+
   }
   .startTextUnder {
     display: flex;
