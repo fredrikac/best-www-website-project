@@ -767,8 +767,10 @@ p, label {
 }
 
 .rubrikOmdöme {
+  text-align: center;
   color: #D68C45;
-  font-size: 120%;
+  font-size: 110%;
+  font-family: 'Gabriela', serif;
 }
 
 h5 {
@@ -776,11 +778,73 @@ h5 {
   font-size: 14px;
 }
 
-img {
-  max-width: 30%;
+.images {
+  max-width: 350px;
 }
 
 p {
   font-size: 14px;
+}
+
+#event {
+  margin-right: 50px;
+  width: 350px;
+  height: 400px;
+  position: relative;
+  display: inline-block;
+}
+
+#wedding {
+  margin-left: 50px;
+  width: 350px;
+  height: 400px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#birthday {
+  width: 350px;
+  height: 400px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#hotelroom {
+  width: 350px;
+  height: 400px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main {
+  margin-left: 160px;
+  width: 75%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 /*# sourceMappingURL=style.css.map */
