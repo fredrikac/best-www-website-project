@@ -7,6 +7,22 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.column {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -14,8 +30,6 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
 }
 
 .imgbox {
@@ -24,8 +38,16 @@
 
 .imgbox .img {
   display: inline-block;
-  -webkit-box-shadow: 110px 0px #D68C45;
-          box-shadow: 110px 0px #D68C45;
+}
+
+.text-block {
+  background-color: #D68C45;
+  width: 150px;
+  height: 350px;
+}
+
+.p {
+  margin: 10px;
 }
 
 @media (max-width: 600px) {
@@ -373,7 +395,7 @@ p, label {
 }
 
 @media (max-width: 600px) {
-  main {
+  .main-book {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -389,23 +411,23 @@ p, label {
             justify-content: center;
     margin: 5vw 0vw;
   }
-  main h2.desktop {
+  .main-book h2.desktop {
     display: none;
   }
-  main h2.mobile {
+  .main-book h2.mobile {
     font-family: 'Quicksand', sans-serif;
     color: white;
     font-size: 200%;
     font-weight: lighter;
     text-align: center;
   }
-  main .form-container {
+  .main-book .form-container {
     width: 60%;
   }
-  main .form-container label {
+  .main-book .form-container label {
     margin-bottom: 1vw;
   }
-  main .form-container .attach-label-to-input {
+  .main-book .form-container .attach-label-to-input {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -415,7 +437,7 @@ p, label {
             flex-direction: column;
     margin-top: 3vw;
   }
-  main .form-container .basic-info {
+  .main-book .form-container .basic-info {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -428,7 +450,7 @@ p, label {
             align-items: center;
     width: 100%;
   }
-  main .form-container .basic-info .input-wrap {
+  .main-book .form-container .basic-info .input-wrap {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -438,13 +460,13 @@ p, label {
             flex-direction: column;
     width: 100%;
   }
-  main .form-container .basic-info input {
+  .main-book .form-container .basic-info input {
     width: 100%;
     height: 4vw;
     border-radius: 1vw;
     border-style: none;
   }
-  main .form-container .date-guests {
+  .main-book .form-container .date-guests {
     margin-bottom: 3vw;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -455,7 +477,7 @@ p, label {
             flex-direction: row;
     width: 100%;
   }
-  main .form-container .date-guests .wrap3 {
+  .main-book .form-container .date-guests .wrap3 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -471,19 +493,19 @@ p, label {
             align-items: center;
     width: 100%;
   }
-  main .form-container .date-guests .wrap3 #date {
+  .main-book .form-container .date-guests .wrap3 #date {
     height: 5vw;
     width: 30vw;
     border-radius: 1vw;
     border-style: none;
   }
-  main .form-container .date-guests .wrap3 #guests {
+  .main-book .form-container .date-guests .wrap3 #guests {
     height: 5vw;
     width: 15vw;
     border-radius: 1vw;
     border-style: none;
   }
-  main .form-container .free-text {
+  .main-book .form-container .free-text {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -495,7 +517,7 @@ p, label {
         -ms-flex-align: center;
             align-items: center;
   }
-  main .form-container .free-text .wrap4 {
+  .main-book .form-container .free-text .wrap4 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -511,13 +533,13 @@ p, label {
             align-items: flex-start;
     width: 100%;
   }
-  main .form-container .free-text .wrap4 input {
+  .main-book .form-container .free-text .wrap4 input {
     height: 30vw;
     width: 100%;
     border-radius: 3vw;
     border-style: none;
   }
-  main .form-container .free-text button {
+  .main-book .form-container .free-text button {
     width: 100%;
     height: 6vw;
     font-family: 'Quicksand', sans-serif;
@@ -527,7 +549,7 @@ p, label {
     margin-top: 2.5vw;
     border-style: none;
   }
-  main .info-text {
+  .main-book .info-text {
     width: 100%;
     margin-top: 8vw;
     display: -webkit-box;
@@ -541,16 +563,16 @@ p, label {
         -ms-flex-align: center;
             align-items: center;
   }
-  main .info-text .call-us {
+  .main-book .info-text .call-us {
     font-size: 120%;
     font-weight: 400;
     text-align: center;
     width: 60%;
   }
-  main .info-text p {
+  .main-book .info-text p {
     width: 80%;
   }
-  main .image-container {
+  .main-book .image-container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -563,7 +585,7 @@ p, label {
     width: 100%;
     margin-top: 10vw;
   }
-  main .image-container img {
+  .main-book .image-container img {
     -o-object-fit: cover;
        object-fit: cover;
     max-width: 60%;
@@ -571,8 +593,8 @@ p, label {
   }
 }
 
-@media (min-width: 601px) {
-  main {
+@media screen and (min-width: 600px) {
+  .main-book {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -583,12 +605,15 @@ p, label {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
     margin: 2vw;
+    width: 100%;
   }
-  main h2.mobile {
+  .main-book h2.mobile {
     display: none;
   }
-  main .form-container {
+  .main-book .form-container {
     width: 35%;
     padding: 0vw 2vw 2vw 2vw;
     display: -webkit-box;
@@ -602,17 +627,17 @@ p, label {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  main .form-container h2.desktop {
+  .main-book .form-container h2.desktop {
     font-family: 'Quicksand', sans-serif;
     color: white;
     font-size: large;
     font-weight: lighter;
   }
-  main .form-container label {
+  .main-book .form-container label {
     margin: 0.5vw 0vw;
     font-size: 80%;
   }
-  main .form-container .full-basic-info {
+  .main-book .form-container .full-basic-info {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -625,7 +650,7 @@ p, label {
             align-items: space-between;
     width: 100%;
   }
-  main .form-container .full-basic-info .input-wrap {
+  .main-book .form-container .full-basic-info .input-wrap {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -641,7 +666,7 @@ p, label {
             align-items: center;
     width: 100%;
   }
-  main .form-container .full-basic-info .input-wrap .attach-label-to-input {
+  .main-book .form-container .full-basic-info .input-wrap .attach-label-to-input {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -654,13 +679,13 @@ p, label {
             align-items: flex-start;
     width: 45%;
   }
-  main .form-container .full-basic-info .input-wrap .attach-label-to-input input {
+  .main-book .form-container .full-basic-info .input-wrap .attach-label-to-input input {
     width: 100%;
     height: 2vw;
     border-radius: 0.5vw;
     border-style: none;
   }
-  main .form-container .free-text {
+  .main-book .form-container .free-text {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -677,7 +702,7 @@ p, label {
     margin-top: 2vw;
     width: 100%;
   }
-  main .form-container .free-text .wrap4 {
+  .main-book .form-container .free-text .wrap4 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -690,13 +715,13 @@ p, label {
             align-items: flex-start;
     width: 100%;
   }
-  main .form-container .free-text .wrap4 input {
+  .main-book .form-container .free-text .wrap4 input {
     height: 10vw;
     width: 100%;
     border-radius: 0.5vw;
     border-style: none;
   }
-  main .form-container .free-text :last-child {
+  .main-book .form-container .free-text :last-child {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -709,7 +734,7 @@ p, label {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  main .form-container .free-text button {
+  .main-book .form-container .free-text button {
     margin-top: 1vw;
     width: 100%;
     height: 3vw;
@@ -721,20 +746,20 @@ p, label {
     border-radius: 0.5vw;
     border-style: none;
   }
-  main .info-text {
+  .main-book .info-text {
     width: 35%;
     padding: 0vw 3vw 0vw 4vw;
   }
-  main .info-text .call-us {
+  .main-book .info-text .call-us {
     font-size: medium;
   }
-  main .info-text a {
+  .main-book .info-text a {
     color: white;
   }
-  main .info-text a:visited {
+  .main-book .info-text a:visited {
     color: #D68C45;
   }
-  main .image-container {
+  .main-book .image-container {
     width: 30%;
     padding: 1vw 0vw;
     display: -webkit-box;
@@ -747,7 +772,7 @@ p, label {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  main .image-container img {
+  .main-book .image-container img {
     -o-object-fit: cover;
        object-fit: cover;
     max-width: 80%;
