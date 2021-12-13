@@ -488,20 +488,27 @@ p, label {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     width: 100%;
   }
-  .main-book .form-container .date-guests .wrap3 #date {
+  .main-book .form-container .date-guests .wrap3 .attach-label-to-input {
+    width: 40%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main-book .form-container .date-guests .wrap3 .attach-label-to-input #date {
     height: 5vw;
-    width: 30vw;
+    width: 100%;
     border-radius: 1vw;
     border-style: none;
   }
-  .main-book .form-container .date-guests .wrap3 #guests {
+  .main-book .form-container .date-guests .wrap3 .attach-label-to-input #guests {
     height: 5vw;
-    width: 15vw;
+    width: 100%;
     border-radius: 1vw;
     border-style: none;
   }
