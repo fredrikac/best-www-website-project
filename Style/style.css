@@ -512,6 +512,13 @@ p, label {
     border-radius: 1vw;
     border-style: none;
   }
+  .main-book .form-container .dropdown {
+    margin: 2vw 0vw 4vw 0vw;
+  }
+  .main-book .form-container .dropdown select {
+    margin-top: 1.5vw;
+    width: 100%;
+  }
   .main-book .form-container .free-text {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -572,9 +579,11 @@ p, label {
   }
   .main-book .info-text .call-us {
     font-size: 120%;
-    font-weight: 400;
     text-align: center;
-    width: 60%;
+    width: 70%;
+    font-family: 'Quicksand', sans-serif;
+    color: white;
+    font-weight: normal;
   }
   .main-book .info-text p {
     width: 80%;
@@ -620,6 +629,12 @@ p, label {
   .main-book h2.mobile {
     display: none;
   }
+  .main-book h2.desktop {
+    font-family: 'Quicksand', sans-serif;
+    color: white;
+    font-size: large;
+    font-weight: lighter;
+  }
   .main-book .form-container {
     width: 35%;
     padding: 0vw 2vw 2vw 2vw;
@@ -633,12 +648,6 @@ p, label {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-  }
-  .main-book .form-container h2.desktop {
-    font-family: 'Quicksand', sans-serif;
-    color: white;
-    font-size: large;
-    font-weight: lighter;
   }
   .main-book .form-container label {
     margin: 0.5vw 0vw;
@@ -691,6 +700,24 @@ p, label {
     height: 2vw;
     border-radius: 0.5vw;
     border-style: none;
+  }
+  .main-book .form-container .dropdown {
+    width: 100%;
+    height: 2vw;
+    margin: 1vw 0vw 3vw 0vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main-book .form-container .dropdown label {
+    margin-bottom: 0.5vw;
+  }
+  .main-book .form-container .dropdown select option {
+    font-family: 'Quicksand', sans-serif;
   }
   .main-book .form-container .free-text {
     display: -webkit-box;
@@ -756,6 +783,11 @@ p, label {
   .main-book .info-text {
     width: 35%;
     padding: 0vw 3vw 0vw 4vw;
+  }
+  .main-book .info-text .call-us {
+    font-family: 'Quicksand', sans-serif;
+    color: white;
+    font-weight: normal;
   }
   .main-book .info-text .call-us {
     font-size: medium;
