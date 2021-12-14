@@ -152,10 +152,26 @@ footer {
         i {
             padding-left: 20px;
         }
+    }
+    .footnav
+    {
+        display: flex;
+        flex-direction: row;
+        .line{
+            text-decoration: white underline;
+        }
 
-        
-      
-    
+    }
+    .footlink{
+        list-style-type:none;
+        border: none;
+        font-size: 15px;
+        margin: 20px;
+        a{
+            text-decoration: none;
+            color: white;
+            margin: 0px;
+        }
 
     }
 }}
