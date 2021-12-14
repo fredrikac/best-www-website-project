@@ -23,7 +23,6 @@ p {
 }
 
 #event {
-    margin-right: 50px;
     width: 350px;
     height: 400px;
     position: relative;
@@ -31,28 +30,24 @@ p {
 }
 
 #wedding {
-    margin-left: 50px;
     width: 350px;
     height: 400px;
     position: relative;
-    display: flex;
-    flex-direction: column;
+    display: inline-block;
 }
 
 #birthday {
     width: 350px;
     height: 400px;
     position: relative;
-    display: flex;
-    flex-direction: column;
+    display: inline-block;
 }
 
 #hotelroom {
     width: 350px;
     height: 400px;
     position: relative;
-    display: flex;
-    flex-direction: column;
+    display: inline-block;
 }
 
 main {
@@ -61,4 +56,6 @@ main {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    justify-content: space-between;
+    margin: auto;
 }
