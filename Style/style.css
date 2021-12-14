@@ -159,15 +159,15 @@
   }
   header .hamburgermenu .fa {
     position: absolute;
-    right: 6vw;
-    top: 6vw;
+    right: 5vw;
+    top: 8vw;
   }
   footer {
     font-family: 'Quicksand', sans-serif;
     color: white;
     width: 100%;
-    background: #7d8aa1;
-    background: linear-gradient(177deg, #7d8aa1 0%, #0f193b 100%);
+    background: #d68c45;
+    background: radial-gradient(circle, #d68c45 0%, #140f46 83%);
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -283,8 +283,8 @@
     font-family: 'Quicksand', sans-serif;
     color: white;
     width: 100%;
-    background: #7d8aa1;
-    background: linear-gradient(177deg, #7d8aa1 0%, #0f193b 100%);
+    background: #d68c45;
+    background: radial-gradient(circle, #d68c45 0%, #140f46 83%);
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -915,69 +915,47 @@ p, label {
   }
 }
 
-.rubrikOmdöme {
-  text-align: center;
-  color: #D68C45;
-  font-size: 110%;
-  font-family: 'Gabriela', serif;
-}
-
-h5 {
-  color: #D68C45;
-  font-size: 14px;
-}
-
-.images {
-  max-width: 350px;
-}
-
-p {
-  font-size: 14px;
-}
-
-#event {
-  width: 350px;
-  height: 400px;
-  position: relative;
-  display: inline-block;
-}
-
-#wedding {
-  width: 350px;
-  height: 400px;
-  position: relative;
-  display: inline-block;
-}
-
-#birthday {
-  width: 350px;
-  height: 400px;
-  position: relative;
-  display: inline-block;
-}
-
-#hotelroom {
-  width: 350px;
-  height: 400px;
-  position: relative;
-  display: inline-block;
-}
-
-main {
-  margin-left: 160px;
-  width: 75%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin: auto;
+@media (max-width: 600px) {
+  header h1 {
+    width: 300px;
+    text-align: center;
+  }
+  .rubrikOmdöme {
+    width: 350px;
+    text-align: center;
+    color: #D68C45;
+  }
+  img {
+    max-width: 350px;
+  }
+  main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 350px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  h5 {
+    color: #D68C45;
+    font-size: 14px;
+    margin: auto;
+  }
+  .article {
+    padding-block: 35px;
+  }
+  .starIcons {
+    color: #D68C45;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: auto;
+  }
 }
 /*# sourceMappingURL=style.css.map */
