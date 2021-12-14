@@ -1,16 +1,13 @@
+
+//Desktop
+@media screen and (min-width: 600px){
+
 .main-about {
   display: flex; 
   flex-direction: column;
   align-items: center;
   justify-content: center;
 
-
-
-
-
-
-
-  
 }
 
 //stylar textfältet
@@ -90,3 +87,98 @@
   .p {
     margin: 10px;
   }
+}
+
+
+
+//Mobile
+@media (max-width: 600px){
+
+.main-about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .text-wrapper {
+    background: white;
+    border: solid 10px $accentColor;
+    padding: 1vw;
+    margin: 5vw 0vw;
+    p {color: black;}
+    h2 {
+      @include paragraph; 
+    }
+
+  }
+
+.img-container {
+  display: flex;
+  flex-direction: column; 
+ 
+
+  //section för 3 bilder i taget
+  .column {
+    display: flex;
+    flex-direction: column;
+
+    .presentation-box {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 5vw;
+
+      .mobil-br {
+        display: none;
+      }
+
+      .text-block {
+        background: $accentColor;
+        width: 100%;
+        height: 20%;
+        p {
+          color: white;
+        }
+
+      }
+    }
+  }
+}
+}
+
+
+  // //styling för sections
+  // .column {
+
+  //   display: flex;
+  //   flex-direction: column;
+  //   //margin: 2vw 0vw;
+ 
+  //   //Container för alla bilder + text
+  //   .presentation-box {
+  //     display: flex;
+  //     flex-direction: column;
+  //     width: 30%;
+      
+
+  //     .text-block{
+  //       background-color: red !important;
+  //       width:40%;
+  //       height: 100%;
+  //     }
+
+
+
+  } 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
