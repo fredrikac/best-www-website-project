@@ -1,6 +1,38 @@
 @charset "UTF-8";
-.about header {
-  color: red;
+.main-about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.section-text {
+  margin-top: 2vw;
+}
+
+.section-text .text-wrapper {
+  width: 75%;
+  margin: auto;
+  background: white;
+  border: solid 10px #D68C45;
+  padding: 1vw;
+}
+
+.section-text .text-wrapper h2 {
+  font-family: 'Quicksand', sans-serif;
+}
+
+.section-text .text-wrapper p {
+  color: black;
 }
 
 .img-container {
@@ -14,12 +46,14 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
 
-.column {
-  width: 100%;
+.img-container .column {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -27,23 +61,38 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 2vw 0vw;
 }
 
-.imgbox {
-  padding: 0 0 30px 30px;
+.img-container .column .presentation-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 30%;
+}
+
+.img-container .column .presentation-box .bocca {
+  max-height: 100%;
+}
+
+.img-container .column .presentation-box .text-block {
+  background-color: #D68C45;
+  width: 40%;
+  height: 100%;
 }
 
 .imgbox .img {
-  display: inline-block;
-}
-
-.text-block {
-  background-color: #D68C45;
-  width: 150px;
-  height: 350px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: auto;
 }
 
 .p {
@@ -110,15 +159,15 @@
   }
   header .hamburgermenu .fa {
     position: absolute;
-    right: 6vw;
-    top: 6vw;
+    right: 5vw;
+    top: 8vw;
   }
   footer {
     font-family: 'Quicksand', sans-serif;
     color: white;
     width: 100%;
-    background: #7d8aa1;
-    background: linear-gradient(177deg, #7d8aa1 0%, #0f193b 100%);
+    background: #d68c45;
+    background: radial-gradient(circle, #d68c45 0%, #140f46 83%);
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -234,8 +283,8 @@
     font-family: 'Quicksand', sans-serif;
     color: white;
     width: 100%;
-    background: #7d8aa1;
-    background: linear-gradient(177deg, #7d8aa1 0%, #0f193b 100%);
+    background: #d68c45;
+    background: radial-gradient(circle, #d68c45 0%, #140f46 83%);
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -376,7 +425,17 @@
     background-image: url("https://images.unsplash.com/photo-1551818255-e6e10975bc17?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1073&q=80");
     background-repeat: no-repeat;
     background-size: 100%;
+    width: 100%;
     min-height: 700px;
+    position: relative;
+  }
+  .layer {
+    background-color: rgba(20, 15, 70, 0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
   }
   .startTextOver {
     width: 45%;
@@ -401,7 +460,6 @@
         justify-content: space-around;
     background: -webkit-gradient(linear, left bottom, left top, from(rgba(22, 36, 86, 0.68)), color-stop(55%, #140f46));
     background: linear-gradient(0deg, rgba(22, 36, 86, 0.68) 0%, #140f46 55%);
-    width: 100%;
     min-height: 300px;
   }
   .startTextUnder .one {
@@ -852,85 +910,47 @@ p, label {
   }
 }
 
-.rubrikOmdöme {
-  text-align: center;
-  color: #D68C45;
-  font-size: 110%;
-  font-family: 'Gabriela', serif;
-}
-
-h5 {
-  color: #D68C45;
-  font-size: 14px;
-}
-
-.images {
-  max-width: 350px;
-}
-
-p {
-  font-size: 14px;
-}
-
-#event {
-  margin-right: 50px;
-  width: 350px;
-  height: 400px;
-  position: relative;
-  display: inline-block;
-}
-
-#wedding {
-  margin-left: 50px;
-  width: 350px;
-  height: 400px;
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-#birthday {
-  width: 350px;
-  height: 400px;
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-#hotelroom {
-  width: 350px;
-  height: 400px;
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-main {
-  margin-left: 160px;
-  width: 75%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+@media (max-width: 600px) {
+  header h1 {
+    width: 300px;
+    text-align: center;
+  }
+  .rubrikOmdöme {
+    width: 350px;
+    text-align: center;
+    color: #D68C45;
+  }
+  img {
+    max-width: 350px;
+  }
+  main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 350px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  h5 {
+    color: #D68C45;
+    font-size: 14px;
+    margin: auto;
+  }
+  .article {
+    padding-block: 35px;
+  }
+  .starIcons {
+    color: #D68C45;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: auto;
+  }
 }
 /*# sourceMappingURL=style.css.map */
