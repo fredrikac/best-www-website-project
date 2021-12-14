@@ -1,6 +1,38 @@
 @charset "UTF-8";
-.about header {
-  color: red;
+.main-about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.section-text {
+  margin-top: 2vw;
+}
+
+.section-text .text-wrapper {
+  width: 75%;
+  margin: auto;
+  background: white;
+  border: solid 10px #D68C45;
+  padding: 1vw;
+}
+
+.section-text .text-wrapper h2 {
+  font-family: 'Quicksand', sans-serif;
+}
+
+.section-text .text-wrapper p {
+  color: black;
 }
 
 .img-container {
@@ -14,12 +46,14 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
 
-.column {
-  width: 100%;
+.img-container .column {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -27,23 +61,38 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 2vw 0vw;
 }
 
-.imgbox {
-  padding: 0 0 30px 30px;
+.img-container .column .presentation-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 30%;
+}
+
+.img-container .column .presentation-box .bocca {
+  max-height: 100%;
+}
+
+.img-container .column .presentation-box .text-block {
+  background-color: #D68C45;
+  width: 40%;
+  height: 100%;
 }
 
 .imgbox .img {
-  display: inline-block;
-}
-
-.text-block {
-  background-color: #D68C45;
-  width: 150px;
-  height: 350px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: auto;
 }
 
 .p {
