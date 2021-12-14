@@ -409,7 +409,7 @@
   }
   p .big {
     font-size: 30px;
-    margin-bottom: 20;
+    margin-bottom: 20px;
   }
   p .medium {
     font-size: 17px;
@@ -448,7 +448,7 @@
     font-size: 17px;
   }
   .startTextUnder .two {
-    font-size: 20;
+    font-size: 20px;
   }
   .startTextUnder .para {
     width: 80%;
