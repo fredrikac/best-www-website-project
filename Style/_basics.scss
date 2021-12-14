@@ -1,11 +1,14 @@
+
 //Mobile first - här skriver vi styling för när skärmen är mindre än 600px
 @media (max-width: 600px){
     body {
+        width: 100%;
         background: $backgroundColor;
         display: flex;
         flex-direction: column;
         align-items: center;
         margin: -10px;//tar bort marginalen ut mot skärmens kanter
+        overflow-x: hidden;
     }
 
     nav {
@@ -13,7 +16,7 @@
     }
 
     header {
-        border: solid $accentColor 2px;
+        border-bottom: solid $accentColor 2px;
         display: flex; 
         flex-direction: row;
         justify-content: space-between;
@@ -72,106 +75,107 @@
 
 //Här är all grundstyling för större skärmar
 @media screen and (min-width: 600px) {
-body {
-    margin: -10px;//tar bort marginalen ut mot skärmens kanter
-}
 
-header{
-    border-bottom: solid $accentColor 2px;
-    object-fit: cover;
-    background-image: url("https://images.unsplash.com/photo-1551818255-e6e10975bc17?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1073&q=80");
-    background-repeat: no-repeat;
-    background-size: 100%;
-    height: 130px;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-
-    .title{
-        @include h1-styling;
-        border: solid 5px $accentColor;
-        height: 70px;
-        width: 200px;
-        margin-left: 20px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+    body {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
     }
 
-    .hamburgermenu {
-     visibility: hidden;//så att hamburgaren inte syns i helskärmsläge
-    }
-}
-nav{
-    margin: 0px;
-    padding: 0px;
-}
-ul{
-    display: flex;
-    flex-direction: row;
-    margin: 0px;
-    padding: 0px;
-    .yellowbutton{
-        background: $accentColor;
-        color: $backgroundColor;
-    }
-}
-li{
-    border: solid $accentColor 2px;
-    font-size: 20px;
-    list-style-type:none;
-    margin: 30px;
-    padding: 10px 20px;
-    @include paragraph;
-
-    a{
-        text-decoration: none;
-        color: $accentColor;
-        margin: 0px;
-    }
-}
-
-footer {
-    @include footer-styling;
-    height: 130px;
-    
-    //adresstexten
-    .adress {
-        width: 15%;
-        font-size: 12pt;
-        margin-left: 25px;
-        // padding: 20px;
-
-    }
-
-    //Social-media-ikonerna
-    .socialmedia {
-        width: 20%;
-        i {
-            padding-left: 20px;
-        }
-    }
-    .footnav
-    {
+    header{
+        border-bottom: solid $accentColor 2px;
+        object-fit: cover;
+        background-image: url("https://images.unsplash.com/photo-1551818255-e6e10975bc17?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1073&q=80");
+        background-repeat: no-repeat;
+        background-size: 100%;
+        height: 130px;
+        width: 100%;
         display: flex;
         flex-direction: row;
-        .line{
-            text-decoration: white underline;
+        justify-content: space-between;
+        align-items: center;
+
+        .title{
+            @include h1-styling;
+            border: solid 5px $accentColor;
+            height: 70px;
+            width: 200px;
+            margin-left: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
+        .hamburgermenu {
+            visibility: hidden;//så att hamburgaren inte syns i helskärmsläge
+        }
     }
-    .footlink{
+    nav{
+        margin: 0px;
+        padding: 0px;
+    }
+    ul{
+        display: flex;
+        flex-direction: row;
+        margin: 0px;
+        padding: 0px;
+        .yellowbutton{
+            background: $accentColor;
+            color: $backgroundColor;
+        }
+    }
+    
+    li{
+        border: solid $accentColor 2px;
+        font-size: 20px;
         list-style-type:none;
-        border: none;
-        font-size: 15px;
-        margin: 20px;
+        margin: 30px;
+        padding: 10px 20px;
+        @include paragraph;
         a{
             text-decoration: none;
-            color: white;
+            color: $accentColor;
             margin: 0px;
         }
-
     }
-}}
+
+    footer {
+        @include footer-styling;
+        height: 130px;
+    
+        //adresstexten
+        .adress {
+            width: 15%;
+            font-size: 12pt;
+            margin-left: 25px;
+            padding: 20px;
+        }
+
+        //Social-media-ikonerna
+        .socialmedia {
+            width: 20%;
+            i {
+                padding-left: 20px;
+            }
+        }
+        .footnav
+        {
+            display: flex;
+            flex-direction: row;
+            .line{
+                text-decoration: white underline;
+            }
+        }
+        .footlink{
+            list-style-type:none;
+            border: none;
+            font-size: 15px;
+            margin: 20px;
+            a{
+                text-decoration: none;
+                color: white;
+                margin: 0px;
+            }
+        }
+    }
+}
