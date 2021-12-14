@@ -11,6 +11,7 @@
         width: 350px;
         text-align: center;
         color: whitesmoke;
+        @include paragraph;
     }
 
     img {

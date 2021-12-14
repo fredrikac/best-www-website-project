@@ -78,6 +78,7 @@
     background-color: #D68C45;
     width: 40%;
     height: 100%;
+    word-wrap: break-word;
   }
   .imgbox .img {
     width: 100%;
@@ -975,6 +976,7 @@ p, label {
     width: 350px;
     text-align: center;
     color: whitesmoke;
+    font-family: 'Quicksand', sans-serif;
   }
   img {
     max-width: 350px;
