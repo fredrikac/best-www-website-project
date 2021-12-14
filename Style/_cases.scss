@@ -10,7 +10,7 @@
     .rubrikOmdöme {
         width: 350px;
         text-align: center;
-        color: $accentColor;
+        color: whitesmoke;
     }
 
     img {
@@ -26,6 +26,7 @@
     }
 
     h5 {
+        @include paragraph;
         color: $accentColor;
         font-size: 14px;
         margin: auto;
@@ -40,64 +41,79 @@
         width: fit-content;
         margin: auto;
     }
+
+    @include paragraph;
 }
 
 @media (min-width: 600px) {
-    // .rubrikOmdöme {
-//     text-align: center;
-//     color: $accentColor;
-//     font-size: 110%;
-//     font-family: 'Gabriela', serif;
-// }
+    .rubrikOmdöme {
+        @include paragraph;
+        text-align: left;
+        margin-left: 156px;
+        color: whitesmoke;
+        font-size: 110%;
+    }
 
-// h5 {
-//     color: $accentColor;
-//     font-size: 14px;
-// }
+    h5 {
+        color: $accentColor;
+        font-size: 14px;
+        @include paragraph;
+    }
 
-// .images {
-//     max-width: 350px;
-// }
+    .images {
+        max-width: 350px;
+    }
 
-// p {
-//     font-size: 14px;
-// }
+    p {
+        @include paragraph;
+        font-size: 14px;
+    }
 
-// #event {
-//     width: 350px;
-//     height: 400px;
-//     position: relative;
-//     display: inline-block;
-// }
+    #event {
+        width: 350px;
+        height: 400px;
+        position: relative;
+        display: inline-block;
+    }
 
-// #wedding {
-//     width: 350px;
-//     height: 400px;
-//     position: relative;
-//     display: inline-block;
-// }
+    #wedding {
+        width: 350px;
+        height: 400px;
+        position: relative;
+        display: inline-block;
+    }
 
-// #birthday {
-//     width: 350px;
-//     height: 400px;
-//     position: relative;
-//     display: inline-block;
-// }
+    #birthday {
+        width: 350px;
+        height: 400px;
+        position: relative;
+        display: inline-block;
+    }
 
-// #hotelroom {
-//     width: 350px;
-//     height: 400px;
-//     position: relative;
-//     display: inline-block;
-// }
+    #hotelroom {
+        width: 350px;
+        height: 400px;
+        position: relative;
+        display: inline-block;
+    }
 
-// main {
-//     margin-left: 160px;
-//     width: 75%;
-//     display: flex;
-//     flex-wrap: wrap;
-//     flex-direction: row;
-//     justify-content: space-between;
-//     margin: auto;
-// }
+    main {
+        margin-left: 160px;
+        width: 75%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: auto;
+    }
+
+    .starIcons {
+        color: $accentColor;
+        width: fit-content;
+        margin: auto;
+    }
+
+    .article {
+        padding-block: 35px;
+    }
 }
