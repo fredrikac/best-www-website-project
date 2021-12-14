@@ -258,6 +258,30 @@
   footer .socialmedia i {
     padding-left: 20px;
   }
+  footer .footnav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  footer .footnav .line {
+    -webkit-text-decoration: white underline;
+            text-decoration: white underline;
+  }
+  footer .footlink {
+    list-style-type: none;
+    border: none;
+    font-size: 15px;
+    margin: 20px;
+  }
+  footer .footlink a {
+    text-decoration: none;
+    color: white;
+    margin: 0px;
+  }
 }
 
 @media (max-width: 600px) {
