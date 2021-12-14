@@ -142,8 +142,7 @@
     position: absolute;
     width: 70%;
     height: 30%;
-    padding: 3vw 6vw 3vw 20vw;
-    margin-bottom: 50px;
+    margin-bottom: 70px;
   }
   header .title h1 {
     color: #D68C45;
@@ -923,7 +922,7 @@ p, label {
   .rubrikOmdöme {
     width: 350px;
     text-align: center;
-    color: #D68C45;
+    color: whitesmoke;
   }
   img {
     max-width: 350px;
@@ -943,6 +942,7 @@ p, label {
         justify-content: space-around;
   }
   h5 {
+    font-family: 'Quicksand', sans-serif;
     color: #D68C45;
     font-size: 14px;
     margin: auto;
@@ -956,6 +956,80 @@ p, label {
     width: -moz-fit-content;
     width: fit-content;
     margin: auto;
+  }
+  font-family: 'Quicksand', sans-serif;
+}
+
+@media (min-width: 600px) {
+  .rubrikOmdöme {
+    font-family: 'Quicksand', sans-serif;
+    text-align: left;
+    margin-left: 156px;
+    color: whitesmoke;
+    font-size: 110%;
+  }
+  h5 {
+    color: #D68C45;
+    font-size: 14px;
+    font-family: 'Quicksand', sans-serif;
+  }
+  .images {
+    max-width: 350px;
+  }
+  p {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 14px;
+  }
+  #event {
+    width: 350px;
+    height: 400px;
+    position: relative;
+    display: inline-block;
+  }
+  #wedding {
+    width: 350px;
+    height: 400px;
+    position: relative;
+    display: inline-block;
+  }
+  #birthday {
+    width: 350px;
+    height: 400px;
+    position: relative;
+    display: inline-block;
+  }
+  #hotelroom {
+    width: 350px;
+    height: 400px;
+    position: relative;
+    display: inline-block;
+  }
+  main {
+    margin-left: 160px;
+    width: 75%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: auto;
+  }
+  .starIcons {
+    color: #D68C45;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: auto;
+  }
+  .article {
+    padding-block: 35px;
   }
 }
 /*# sourceMappingURL=style.css.map */
