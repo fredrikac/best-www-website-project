@@ -378,6 +378,15 @@
     background-size: 100%;
     width: 100%;
     min-height: 700px;
+    position: relative;
+  }
+  .layer {
+    background-color: rgba(20, 15, 70, 0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
   }
   .startTextOver {
     width: 45%;
