@@ -7,9 +7,9 @@
     <title>Boka</title>
     <link rel="stylesheet" href="Style/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com/%22%3E
+    <link rel="preconnect" href="https://fonts.googleapis.com/%22%3E">
 <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Gabriela&family=Quicksand&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gabriela&family=Quicksand&display=swap">
     
 </head>
 <body class="body-book">
@@ -31,7 +31,6 @@
             <h2 class="desktop">Välkommen med din bokningsförfrågan! <br>Vi svarar normalt inom 48 timmar. </h2>
 
              <form id="form-1">
-                
                 <div class="full-basic-info"><!--för att desktop ska ha samma format på alla fält från namn till antal-->
                  <div class="basic-info"> <!--för att mobile ska ha datum och antal i row på en rad-->
 
@@ -75,23 +74,36 @@
                                     </div><!--här slutar input-wrap-->
                                         </div><!--här slutar date-guests-->
                                             </div><!--här slutar full basic-info-->
+                <div class="dropdown">
+                <label for="type-of-event">Typ av event</label>
+                <select name="type-of-event" id="type-of-event">
+                    <option value="default" selected disabled>Välj...</option>
+                    <option value="day-conference">Dagkonferens</option>
+                    <option value="overnight-conference">Konferens med övernattning</option>
+                    <option value="party-corporate">Fest företag</option>   
+                    <option value="party-private">Fest privatperson</option>
+                    <option value="wedding">Bröllop</option>
+                    <option value="other-event">Övriga event</option>
+                </select>
+            </div>
          
             <div class="free-text">
                 <div class="input-wrap wrap4">
                     <label for="specifications">Beskriv dina önskemål</label>
                     <input type="text" id="specifications">
                         </div><!--här slutar input-wrap-->
-                    </form>
+                    
             <button type="submit" form="form-1">Skicka</button>
                 </div><!--här slutar free-text-->
+            </form>
             
 
          </section>
          <section class="info-text">
-            <p class="call-us">
+            <h3 class="call-us">
                 Du kan också ringa oss för en personlig konsultation. <br>
                 Vi finns tillgängliga mån-fre 8.00-17.00. <br>
-                Tel: 08 10 10 10</p>
+                Tel: 08 10 10 10</h3>
             <p>
                 För frågor kring fakturor, vänligen kontakta ekonomiavdelningen.<br>
                 Tel: 08 11 11 11<br>

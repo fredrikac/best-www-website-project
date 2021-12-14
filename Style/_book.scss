@@ -97,6 +97,15 @@ p, label {
                 }
             }
 
+            //dropdown-menyn
+            .dropdown {
+                margin: 2vw 0vw 4vw 0vw;
+                select {
+                    margin-top: 1.5vw;
+                    width: 100%;
+                }
+            }
+
             //beskriv dina önskemål-delen
             .free-text{
                 display: flex;
@@ -140,9 +149,11 @@ p, label {
 
             .call-us {
                 font-size: 120%;
-                font-weight: 400;
                 text-align: center;
-                width: 60%;
+                width: 70%;
+                @include paragraph;
+                color: white;
+                font-weight: normal;
             }
 
             p {
@@ -172,8 +183,6 @@ p, label {
 
 //Desktop
 @media screen and (min-width: 600px){
-
-
     .main-book {
         display: flex;
         flex-direction: row;
@@ -181,8 +190,16 @@ p, label {
         flex-wrap: nowrap;
         margin: 2vw;
         width: 100%;
+        
         h2.mobile {
            display: none;
+        }
+
+        h2.desktop {
+            @include paragraph;//gör en mixin av dessa
+            color: white;
+            font-size: large;
+            font-weight: lighter;
         }
 
         //styling för vänster section
@@ -192,20 +209,11 @@ p, label {
             display: flex;
             flex-direction: column;
             justify-content: center;
-        
-
-            h2.desktop {
-                @include paragraph;//gör en mixin av dessa
-                color: white;
-                font-size: large;
-                font-weight: lighter;
-            }
 
             label {
                 margin: 0.5vw 0vw;
                 font-size: 80%;
             }
-
 
             //första delen av formuläret inkl datum och antal
             .full-basic-info {
@@ -238,6 +246,24 @@ p, label {
 
                     }
 
+                }
+
+            }
+            //dropdown-menyn
+             .dropdown {
+                width: 100%;
+                height: 2vw;
+                margin: 1vw 0vw 3vw 0vw;
+                display: flex;
+                flex-direction: column;
+                
+                label {
+                    margin-bottom: 0.5vw;
+                }
+                select{
+                    option {
+                        @include paragraph;
+                    }
                 }
 
             }
@@ -292,6 +318,13 @@ p, label {
         .info-text {
             width: 35%;
             padding: 0vw 3vw 0vw 4vw;
+
+            .call-us {
+                @include paragraph;
+                color: white;
+                font-weight: normal;
+            }
+           
 
             .call-us {
                 font-size: medium;
