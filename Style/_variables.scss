@@ -1,8 +1,8 @@
-//variabler
+//Variabler
 $backgroundColor: #140F46; 
 $accentColor: #D68C45; 
 
-//mixins
+//Mixins
 @mixin paragraph {
     font-family: 'Quicksand', sans-serif;
 }
@@ -25,3 +25,32 @@ $accentColor: #D68C45;
     justify-content: space-between;
     align-items: center;
 }
+
+@mixin flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin flex-column-align-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+}
+
+@mixin flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+@mixin cases-image-settings {
+    position: relative;
+    display: inline-block;
+    width: 350px;
+    height: 400px;
+}
+
+@mixin background-size-repeat{
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+

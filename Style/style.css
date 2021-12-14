@@ -39,12 +39,12 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
@@ -70,9 +70,6 @@
         -ms-flex-direction: row;
             flex-direction: row;
     width: 30%;
-  }
-  .img-container .column .presentation-box .bocca {
-    max-height: 100%;
   }
   .img-container .column .presentation-box .text-block {
     background-color: #D68C45;
@@ -423,11 +420,11 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
   .startTextUnder {
     display: -webkit-box;
@@ -437,11 +434,11 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     background-color: #140F46;
   }
   .startTextUnder .one {
@@ -479,9 +476,9 @@
     margin-top: 10px;
   }
   .background {
-    background-image: url("https://images.unsplash.com/photo-1551818255-e6e10975bc17?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1073&q=80");
     background-repeat: no-repeat;
     background-size: 100%;
+    background-image: url("https://images.unsplash.com/photo-1551818255-e6e10975bc17?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1073&q=80");
     width: 100%;
     min-height: 700px;
     position: relative;
@@ -495,8 +492,6 @@
     height: 100%;
   }
   .startTextOver {
-    width: 45%;
-    margin: 100px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -504,6 +499,8 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    width: 45%;
+    margin: 100px;
   }
   .startTextUnder {
     display: -webkit-box;
@@ -1035,28 +1032,28 @@ p, label {
     font-size: 14px;
   }
   #event {
-    width: 350px;
-    height: 400px;
     position: relative;
     display: inline-block;
+    width: 350px;
+    height: 400px;
   }
   #wedding {
-    width: 350px;
-    height: 400px;
     position: relative;
     display: inline-block;
+    width: 350px;
+    height: 400px;
   }
   #birthday {
-    width: 350px;
-    height: 400px;
     position: relative;
     display: inline-block;
+    width: 350px;
+    height: 400px;
   }
   #hotelroom {
-    width: 350px;
-    height: 400px;
     position: relative;
     display: inline-block;
+    width: 350px;
+    height: 400px;
   }
   main {
     margin-left: 160px;
@@ -1064,12 +1061,12 @@ p, label {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
