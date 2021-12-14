@@ -52,6 +52,7 @@
 
 @media (max-width: 600px) {
   body {
+    width: 100%;
     background: #140F46;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -64,12 +65,13 @@
         -ms-flex-align: center;
             align-items: center;
     margin: -10px;
+    overflow-x: hidden;
   }
   nav {
     visibility: hidden;
   }
   header {
-    border: solid #D68C45 2px;
+    border-bottom: solid #D68C45 2px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -147,7 +149,9 @@
 
 @media screen and (min-width: 600px) {
   body {
-    margin: -10px;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
   }
   header {
     border-bottom: solid #D68C45 2px;
@@ -251,6 +255,7 @@
     width: 15%;
     font-size: 12pt;
     margin-left: 25px;
+    padding: 20px;
   }
   footer .socialmedia {
     width: 20%;
@@ -288,7 +293,7 @@
   .body {
     background-color: #140F46;
   }
-  .main {
+  .main-start {
     margin: auto;
   }
   p {
@@ -634,6 +639,15 @@ p, label {
 }
 
 @media screen and (min-width: 600px) {
+  .body-book {
+    width: 100%;
+  }
+  .header-book {
+    width: 100%;
+  }
+  .footer-book {
+    width: 100%;
+  }
   .main-book {
     display: -webkit-box;
     display: -ms-flexbox;
