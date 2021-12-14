@@ -180,29 +180,8 @@ p, label {
 }
 
 
-//fixa variabler och mixins för all gemensam styling
-
 //Desktop
 @media screen and (min-width: 600px){
-    .body-book {
-        width: 100%;
-    }
-
-    .header-book {
-        width: 100%;
-    }
-
-    .footer-book {
-        width: 100%;
-    }
-
-
-    //kolla procenten på mina sections! de är inte problemet.
-    //vänster section: 35
-    //mitten: 35
-    //höger: 30
-    //kolla paddin? - inte problemet
-
 
     .main-book {
         display: flex;
@@ -365,12 +344,13 @@ p, label {
             width: 30%;
             padding: 1vw 0vw;
             display: flex;
+            flex-direction: row;
             align-items: flex-start;
-            justify-content: center;
+            justify-content: flex-start;
             img {
-            object-fit: cover;//mixin
-            max-width: 80%;
-            height: auto;
+                object-fit: cover;//mixin
+                max-width: 80%;
+                height: auto;
             }
 
         }
