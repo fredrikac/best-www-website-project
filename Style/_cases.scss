@@ -19,8 +19,7 @@
     }
 
     main {
-        display: flex;
-        flex-direction: column;
+        @include flex-column;
         width: 350px;
         flex-wrap: wrap;
         justify-content: space-around;
@@ -71,39 +70,26 @@
     }
 
     #event {
-        width: 350px;
-        height: 400px;
-        position: relative;
-        display: inline-block;
+        @include cases-image-settings;
     }
 
     #wedding {
-        width: 350px;
-        height: 400px;
-        position: relative;
-        display: inline-block;
+        @include cases-image-settings;
     }
 
     #birthday {
-        width: 350px;
-        height: 400px;
-        position: relative;
-        display: inline-block;
+        @include cases-image-settings;
     }
 
     #hotelroom {
-        width: 350px;
-        height: 400px;
-        position: relative;
-        display: inline-block;
+        @include cases-image-settings;
     }
 
     main {
         margin-left: 160px;
         width: 75%;
-        display: flex;
+        @include flex-row;
         flex-wrap: wrap;
-        flex-direction: row;
         justify-content: space-between;
         margin: auto;
     }

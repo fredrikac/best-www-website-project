@@ -3,9 +3,11 @@
   .body {
     background-color: $backgroundColor;
   }
+
   .main-start {
     margin: auto;
   }
+
   p {
     @include paragraph;
     color: white;
@@ -19,63 +21,64 @@
       text-align: left;
     }
   }
-  .startTextOver {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around ;
-    align-items: center;
 
-  }
-  .startTextUnder {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    background-color: $backgroundColor;
-    .one {
-      font-size: 17px;
+    .startTextOver {
+      @include flex-column-align-center;
+      justify-content: space-around ;
     }
-    .two {
-      font-size: 20px;
+
+    .startTextUnder {
+      @include flex-column-align-center;
+      justify-content: space-around;
+      background-color: $backgroundColor;
+      .one {
+        font-size: 17px;
+      }
+      .two {
+        font-size: 20px;
+      }
+      .para {
+        width: 80%;
+      }
     }
-    .para {
-      width: 80%;
+
+    .telefonimg {
+      @include background-size-repeat;
+      margin-top: 20px;
+      width: 90%;
+      height: 200px;
+      background-image: url("https://images.unsplash.com/photo-1551818255-e6e10975bc17?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1073&q=80");
     }
-  }
-  .telefonimg {
-    background-repeat: no-repeat;
-    background-size: 100%;
-    margin-top: 20px;
-    width: 90%;
-    height: 200px;
-    background-image: url("https://images.unsplash.com/photo-1551818255-e6e10975bc17?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1073&q=80");
-  }
 }
+
 //skärm
 @media screen and (min-width: 600px) {
   body {
     background-color: $backgroundColor;
   }
+
   p {
     @include paragraph;
     color: white;
     .big {
       font-size: 40px;
     }
+
     .medium {
       font-size: 25px;
       margin-top: 10px;
     }
   }
+
   .background {
+    @include background-size-repeat;
     background-image: url("https://images.unsplash.com/photo-1551818255-e6e10975bc17?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1073&q=80");
-    background-repeat: no-repeat;
-    background-size: 100%; 
     width: 100%;
     min-height: 700px;
     position: relative;
   }
-  .layer{
+
+  .layer {
     background-color: rgba(20, 15, 70, 0.7);
     position: absolute;
     top: 0;
@@ -83,15 +86,15 @@
     width: 100%;
     height: 100%;
   }
+
   .startTextOver {
+    @include flex-column;
     width: 45%; 
     margin: 100px;
-    display: flex;
-    flex-direction: column;
   }
+  
   .startTextUnder {
-    display: flex;
-    flex-direction: row;
+    @include flex-row;
     justify-content: space-around;
     background: linear-gradient(0deg, rgba(22,36,86,0.68) 0%, rgba(20,15,70,1) 55%);
     min-height: 300px;
